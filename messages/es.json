@@ -1,0 +1,66 @@
+{
+  "meta": {
+    "title": "Samuel Bermúdez — Creative Developer",
+    "description": "Portfolio 3D de Samuel Bermúdez (samxssj): desarrollador creativo full-stack. Next.js, React Three Fiber y TypeScript."
+  },
+  "nav": {
+    "about": "Sobre mí",
+    "stack": "Stack",
+    "work": "Proyectos",
+    "contact": "Contacto",
+    "switchLocale": "Switch to English",
+    "github": "GitHub de Samuel"
+  },
+  "hero": {
+    "greeting": "Hola, soy",
+    "name": "Samuel",
+    "role1": "Creative",
+    "role2": "Developer",
+    "tagline": "Construyo webs que se sienten vivas.",
+    "cta": "Ver proyectos",
+    "scroll": "desliza"
+  },
+  "about": {
+    "title": "Sobre mí",
+    "bio": "Dev de Envigado, Colombia. Graduado en DAM y construyendo Synth Studio, mi propio estudio de desarrollo. Me obsesiona que las cosas se sientan bien: cada pixel, cada animación, cada milisegundo.",
+    "card1Title": "Web apps",
+    "card1Body": "Aplicaciones completas con Next.js, React y TypeScript: del diseño al deploy.",
+    "card2Title": "SaaS",
+    "card2Body": "Productos con auth, dashboards y datos en tiempo real sobre Supabase o PostgreSQL.",
+    "card3Title": "E-commerce",
+    "card3Body": "Tiendas rápidas y con personalidad, pensadas para convertir."
+  },
+  "stack": {
+    "title": "Mi stack",
+    "hint": "pista: pulsa una tecla",
+    "fallback": "Tecnologías con las que trabajo a diario:"
+  },
+  "work": {
+    "title": "Proyectos",
+    "visit": "Ver demo",
+    "code": "Código"
+  },
+  "contact": {
+    "title": "Hablemos",
+    "subtitle": "¿Tienes una idea? Cuéntamela.",
+    "name": "Tu nombre",
+    "namePlaceholder": "¿Cómo te llamas?",
+    "email": "Tu email",
+    "emailPlaceholder": "tu@email.com",
+    "message": "Tu mensaje",
+    "messagePlaceholder": "Cuéntame tu idea…",
+    "send": "Enviar",
+    "sending": "Enviando…",
+    "success": "Mensaje enviado. Te respondo pronto.",
+    "error": "No se pudo enviar. Escríbeme directo a {email}",
+    "validation": {
+      "name": "Escribe tu nombre",
+      "email": "Ese email no parece válido",
+      "message": "El mensaje necesita al menos 10 caracteres"
+    }
+  },
+  "footer": {
+    "made": "Hecho con Next.js + React Three Fiber",
+    "rights": "© {year} Samuel Bermúdez"
+  }
+}
