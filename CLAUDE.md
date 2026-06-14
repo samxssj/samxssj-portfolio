@@ -7,9 +7,15 @@ Portfolio 3D personal de Samuel (marca personal dev). One-pager bilingüe ES/EN.
 - Spec: `docs/superpowers/specs/2026-06-13-portfolio-3d-design.md`
 - Plan: `docs/superpowers/plans/2026-06-13-portfolio-3d.md`
 - Stack: Next.js 16 + TS estricto + Tailwind v4 + next-intl + R3F/drei + Resend.
-- 3D: avatar GLB en `public/models/avatar.glb` (pipeline Higgsfield), teclado 100% procedural.
+- 3D: **avatar = parallax 2D** (`public/avatar.webp`, concept Higgsfield con fondo recortado — NO hay GLB; el plan free de Higgsfield no llegaba a los 30 cr del image-to-3D). Teclado 100% procedural en R3F.
 - Tests: `npm test` (Vitest, solo `tests/unit/`), `npm run test:e2e` (Playwright, `e2e/`).
-- Deploy: Vercel, directo desde `main`.
+- Deploy: Vercel, directo desde `main`. **Prod: https://samxssj-portfolio.vercel.app** (repo privado).
+- Env prod: `CONTACT_TO_EMAIL` seteada. Falta `RESEND_API_KEY` → el form muestra "escríbeme directo" hasta añadirla.
+
+## Gotchas de entorno
+- Puerto **3000 ocupado por contenedores Docker** del homelab. Usar `PORT=3100` para dev/start/e2e.
+- Playwright: chromium bundled (`channel: undefined`); no hay Chrome de sistema y `npx playwright install chrome` pide sudo.
+- zsh: `$path` es variable reservada (= array PATH). No usar `path` como var de loop o rompe el PATH.
 
 ## Notas Next.js 16
 
