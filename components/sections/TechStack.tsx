@@ -6,6 +6,7 @@ import { LazyMount, CanvasBoundary, usePrefersReducedMotion } from '@/components
 import { SectionHeading } from '@/components/ui/SectionHeading';
 import { Badge } from '@/components/ui/Badge';
 import { STACK } from '@/content/stack';
+import { Reveal } from '@/components/ui/Reveal';
 
 const KeyboardScene = dynamic(() => import('@/components/three/KeyboardScene'), { ssr: false });
 
@@ -30,10 +31,12 @@ export function TechStack() {
 
   return (
     <section id="stack" className="mx-auto max-w-6xl px-6 py-28">
-      <div className="text-center">
-        <SectionHeading>{t('title')}</SectionHeading>
-        <p className="mt-3 text-xs uppercase tracking-widest text-muted/70">{t('hint')}</p>
-      </div>
+      <Reveal>
+        <div className="text-center">
+          <SectionHeading>{t('title')}</SectionHeading>
+          <p className="mt-3 text-xs uppercase tracking-widest text-muted/70">{t('hint')}</p>
+        </div>
+      </Reveal>
       <div className="mt-10 h-[420px] sm:h-[480px]">
         <LazyMount placeholder={<StackFallback />}>
           <CanvasBoundary fallback={<StackFallback />}>

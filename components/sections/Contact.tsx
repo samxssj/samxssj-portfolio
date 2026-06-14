@@ -4,6 +4,7 @@ import { useActionState } from 'react';
 import { useTranslations } from 'next-intl';
 import { submitContact, type ContactState } from '@/lib/actions/contact';
 import { SectionHeading } from '@/components/ui/SectionHeading';
+import { Reveal } from '@/components/ui/Reveal';
 
 const CONTACT_EMAIL = 'samuelbermudez2812@gmail.com';
 
@@ -25,6 +26,7 @@ export function Contact() {
       <SectionHeading>{t('title')}</SectionHeading>
       <p className="mt-4 text-muted">{t('subtitle')}</p>
 
+      <Reveal>
       <div className="mt-12 grid gap-12 lg:grid-cols-[1fr_auto]">
         <form action={formAction} className="max-w-xl space-y-5" noValidate>
           <div>
@@ -116,6 +118,7 @@ export function Contact() {
           </a>
         </aside>
       </div>
+      </Reveal>
     </section>
   );
 }

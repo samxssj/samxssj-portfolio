@@ -4,6 +4,7 @@ import { PROJECTS } from '@/content/projects';
 import { SectionHeading } from '@/components/ui/SectionHeading';
 import { Badge } from '@/components/ui/Badge';
 import { TiltCard } from '@/components/ui/TiltCard';
+import { Reveal } from '@/components/ui/Reveal';
 
 export function Work() {
   const t = useTranslations('work');
@@ -13,8 +14,9 @@ export function Work() {
     <section id="work" className="mx-auto max-w-6xl px-6 py-28">
       <SectionHeading>{t('title')}</SectionHeading>
       <div className="mt-12 grid gap-6 sm:grid-cols-2">
-        {PROJECTS.map((project) => (
-          <TiltCard key={project.id}>
+        {PROJECTS.map((project, i) => (
+          <Reveal key={project.id} delay={i * 80}>
+          <TiltCard>
             <article className="overflow-hidden rounded-2xl border border-border-soft bg-surface">
               <div className="relative aspect-[16/10] bg-surface-2">
                 <Image
@@ -60,6 +62,7 @@ export function Work() {
               </div>
             </article>
           </TiltCard>
+          </Reveal>
         ))}
       </div>
     </section>
