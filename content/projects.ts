@@ -43,7 +43,7 @@ export const PROJECTS: Project[] = [
       es: 'Ecosistema digital para una academia de Brazilian Jiu-Jitsu en Barcelona: web corporativa y panel de administración para gestión de alumnos, torneos y operaciones del gimnasio. Primer cliente real de Synth Studio.',
       en: 'Digital ecosystem for a Brazilian Jiu-Jitsu academy in Barcelona: corporate site and admin panel for managing members, tournaments, and gym operations. First real client of Synth Studio.',
     },
-    repoUrl: 'https://github.com/samxssj/GrapplersParadiseWeb',
+    demoUrl: 'https://grapplersparadise.vercel.app',
   },
   {
     id: 'ecommerce-samx',
@@ -54,7 +54,6 @@ export const PROJECTS: Project[] = [
       es: 'Tienda online full-stack para equipamiento de artes marciales: auth JWT en cookies HTTP-only, pagos reales con Stripe, panel de administración, visor 3D con Three.js y microservicio Python para quitar fondo de imágenes.',
       en: 'Full-stack online store for martial arts equipment: HTTP-only cookie JWT auth, live Stripe payments, admin panel, Three.js 3D product viewer, and a Python microservice for background removal.',
     },
-    repoUrl: 'https://github.com/samxssj/e-commerce-samx',
   },
   {
     id: 'q-engine',
@@ -65,6 +64,6 @@ export const PROJECTS: Project[] = [
       es: 'Aplicación web de evaluación de movilidad basada en el método Q-Engine: protocolo paramétrico con visualización de resultados, generación de QR para compartir informes y envío por email.',
       en: 'Web app for mobility assessment based on the Q-Engine method: parametric protocol with results visualization, QR code sharing, and email report delivery.',
     },
-    repoUrl: 'https://github.com/samxssj/Q-Engine',
+    demoUrl: 'https://q-engine-mobility.vercel.app',
   },
 ];
