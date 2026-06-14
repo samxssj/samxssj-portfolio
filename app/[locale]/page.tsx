@@ -2,6 +2,7 @@ import { setRequestLocale } from 'next-intl/server';
 import { Nav } from '@/components/sections/Nav';
 import { Footer } from '@/components/sections/Footer';
 import { Hero } from '@/components/sections/Hero';
+import { AvatarParallax } from '@/components/sections/AvatarParallax';
 import { About } from '@/components/sections/About';
 import { TechStack } from '@/components/sections/TechStack';
 import { Work } from '@/components/sections/Work';
@@ -16,7 +17,7 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
       <Nav />
       <main>
         {/* Las secciones se montan en sus tareas: Hero, About, TechStack, Work, Contact */}
-        <Hero />
+        <Hero scene={<AvatarParallax />} />
         <About />
         <TechStack />
         <Work />

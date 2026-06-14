@@ -3,6 +3,9 @@
 @theme {
   --font-sans: var(--font-montserrat), system-ui, sans-serif;
 
+  /* flotación idle del avatar del hero (Emil: el movimiento sale del reposo) */
+  --animate-float: float 6s ease-in-out infinite;
+
   /* fondo negro-violeta profundo; acento violeta hue 293 (no 264, se ve azul) */
   --color-bg: oklch(13% 0.02 293);
   --color-surface: oklch(17% 0.025 293);
@@ -35,4 +38,14 @@ body {
 :focus-visible {
   outline: 2px solid var(--color-accent);
   outline-offset: 2px;
+}
+
+@keyframes float {
+  0%,
+  100% {
+    translate: 0 0;
+  }
+  50% {
+    translate: 0 -14px;
+  }
 }
