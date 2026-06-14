@@ -13,7 +13,7 @@ export const PROJECTS: Project[] = [
   {
     id: 'nutricita',
     name: 'NutriCita',
-    image: '/projects/nutricita.png',
+    image: '/projects/nutricita.webp',
     stack: ['Next.js', 'TypeScript', 'Supabase', 'Tailwind', 'Resend'],
     description: {
       es: 'Sistema de reservas para una clínica de nutrición: agenda pública con slots por hora, cuestionario pre-visita, panel de gestión con estadísticas, fichas de pacientes con progreso de peso, recordatorios automáticos 24h y emails transaccionales con identidad propia. En producción.',
@@ -25,7 +25,7 @@ export const PROJECTS: Project[] = [
   {
     id: 'porthive',
     name: 'PortHive',
-    image: '/projects/porthive.png',
+    image: '/projects/porthive.webp',
     stack: ['Next.js', 'TypeScript', 'Supabase', 'Stripe', 'Tailwind'],
     description: {
       es: 'SaaS multi-tenant white-label para agencias: panel de gestión de clientes, proyectos con fases, entregables, facturas con pago Stripe y portal de cliente con la marca de cada agencia. En producción.',
@@ -37,7 +37,7 @@ export const PROJECTS: Project[] = [
   {
     id: 'grapplers-paradise',
     name: 'Grapplers Paradise',
-    image: '/projects/grapplers-paradise.png',
+    image: '/projects/grapplers-paradise.webp',
     stack: ['Next.js', 'TypeScript', 'Prisma', 'PostgreSQL', 'Supabase'],
     description: {
       es: 'Ecosistema digital para una academia de Brazilian Jiu-Jitsu en Barcelona: web corporativa y panel de administración para gestión de alumnos, torneos y operaciones del gimnasio. Primer cliente real de Synth Studio.',
@@ -48,7 +48,7 @@ export const PROJECTS: Project[] = [
   {
     id: 'ecommerce-samx',
     name: 'E-commerce SamX',
-    image: '/projects/ecommerce-samx.png',
+    image: '/projects/ecommerce-samx.webp',
     stack: ['React', 'TypeScript', 'Node.js', 'PostgreSQL', 'Stripe'],
     description: {
       es: 'Tienda online full-stack para equipamiento de artes marciales: auth JWT en cookies HTTP-only, pagos reales con Stripe, panel de administración, visor 3D con Three.js y microservicio Python para quitar fondo de imágenes.',
@@ -59,7 +59,7 @@ export const PROJECTS: Project[] = [
   {
     id: 'q-engine',
     name: 'Q-Engine',
-    image: '/projects/q-engine.png',
+    image: '/projects/q-engine.webp',
     stack: ['React', 'TypeScript', 'Vite', 'Tailwind', 'Framer Motion'],
     description: {
       es: 'Aplicación web de evaluación de movilidad basada en el método Q-Engine: protocolo paramétrico con visualización de resultados, generación de QR para compartir informes y envío por email.',
