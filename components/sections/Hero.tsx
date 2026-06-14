@@ -38,7 +38,7 @@ export function Hero({ scene }: { scene?: React.ReactNode }) {
         >
           {t('cta')}
         </a>
-        <span className="animate-bounce text-xs uppercase tracking-widest text-muted/60">
+        <span className="animate-bounce text-xs uppercase tracking-widest text-muted">
           ↓ {t('scroll')}
         </span>
       </div>
