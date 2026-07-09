@@ -45,3 +45,7 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# lighthouse/chrome profile artifacts (se colaron por rutas WSL/Windows mixtas — AUD-REPOSITORIOS-001)
+lighthouse.*/
+"*lighthouse*"
