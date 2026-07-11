@@ -1,6 +1,6 @@
 'use client';
 
-import { Component, type ReactNode, useEffect, useRef, useState } from 'react';
+import { Component, type ReactNode, useEffect, useRef, useState, useSyncExternalStore } from 'react';
 
 /** Monta children solo cuando el contenedor entra en viewport (+margen de precarga). */
 export function LazyMount({
@@ -56,13 +56,14 @@ export class CanvasBoundary extends Component<
 
 /** true si el usuario pide menos movimiento — las escenas congelan animaciones */
 export function usePrefersReducedMotion(): boolean {
-  const [reduced, setReduced] = useState(false);
-  useEffect(() => {
-    const mq = window.matchMedia('(prefers-reduced-motion: reduce)');
-    setReduced(mq.matches);
-    const onChange = (e: MediaQueryListEvent) => setReduced(e.matches);
-    mq.addEventListener('change', onChange);
-    return () => mq.removeEventListener('change', onChange);
-  }, []);
-  return reduced;
+  return useSyncExternalStore(
+    (onChange) => {
+      const mq = window.matchMedia('(prefers-reduced-motion: reduce)');
+      mq.addEventListener('change', onChange);
+      return () => mq.removeEventListener('change', onChange);
+    },
+    () => window.matchMedia('(prefers-reduced-motion: reduce)').matches,
+    // En SSR no hay media query: asumir movimiento normal
+    () => false,
+  );
 }

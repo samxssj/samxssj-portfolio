@@ -1,23 +1,24 @@
 'use client';
 
 import { useEffect, useRef, useState } from 'react';
+import { usePrefersReducedMotion } from '../three/LazyCanvas';
 
 /** Aparece con scale(0.95)+opacity:0 → ease-out al entrar en viewport. Regla Emil: las cosas salen, no entran. */
 export function Reveal({ children, delay = 0 }: { children: React.ReactNode; delay?: number }) {
   const ref = useRef<HTMLDivElement>(null);
-  const [shown, setShown] = useState(false);
+  const reducedMotion = usePrefersReducedMotion();
+  const [entered, setEntered] = useState(false);
+  // Con reduced-motion no se observa el viewport: el contenido se muestra directo
+  const shown = entered || reducedMotion;
 
   useEffect(() => {
-    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-      setShown(true);
-      return;
-    }
+    if (reducedMotion) return;
     const el = ref.current;
     if (!el) return;
     const io = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
-          setShown(true);
+          setEntered(true);
           io.disconnect();
         }
       },
@@ -25,7 +26,7 @@ export function Reveal({ children, delay = 0 }: { children: React.ReactNode; del
     );
     io.observe(el);
     return () => io.disconnect();
-  }, []);
+  }, [reducedMotion]);
 
   return (
     <div
