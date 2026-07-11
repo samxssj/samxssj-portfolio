@@ -4,6 +4,8 @@ Personal developer portfolio built with Next.js — bilingual (ES/EN), interacti
 
 **Live:** https://samxssj-portfolio.vercel.app
 
+![Portfolio hero](docs/screenshot-hero.png)
+
 ## Tech stack
 
 | Area | Technologies |
