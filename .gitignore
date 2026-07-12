@@ -49,14 +49,3 @@ next-env.d.ts
 # lighthouse/chrome profile artifacts (se colaron por rutas WSL/Windows mixtas — AUD-REPOSITORIOS-001)
 lighthouse.*/
 "*lighthouse*"
-
-# Internal AI assistant / agent files (kept out of public repo)
-CLAUDE.md
-AGENTS.md
-MEMORY.md
-INTERNAL.md
-.claude/
-.cursor/
-.mcp.json
-.mcp*
-docs/superpowers/
