@@ -1,5 +1,7 @@
 # samxssj-portfolio
 
+[![CI](https://github.com/samxssj/samxssj-portfolio/actions/workflows/ci.yml/badge.svg)](https://github.com/samxssj/samxssj-portfolio/actions/workflows/ci.yml)
+
 Personal developer portfolio built with Next.js — bilingual (ES/EN), interactive 3D hero, and a working contact form. Built with a focus on performance, accessibility and clean motion.
 
 **Live:** https://samxssj-portfolio.vercel.app
