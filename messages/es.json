@@ -63,6 +63,7 @@
     "sending": "Enviando…",
     "success": "Mensaje enviado. Te respondo pronto.",
     "error": "No se pudo enviar. Escríbeme directo a {email}",
+    "rateLimited": "Has enviado varios mensajes seguidos. Espera unos minutos o escríbeme directo a {email}",
     "validation": {
       "name": "Escribe tu nombre",
       "email": "Ese email no parece válido",

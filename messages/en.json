@@ -63,6 +63,7 @@
     "sending": "Sending…",
     "success": "Message sent. I'll get back to you soon.",
     "error": "Couldn't send. Email me directly at {email}",
+    "rateLimited": "You've sent several messages in a row. Wait a few minutes or email me directly at {email}",
     "validation": {
       "name": "Please write your name",
       "email": "That email doesn't look valid",

@@ -95,7 +95,9 @@ export function Contact() {
             )}
             {state.status === 'error' && !state.fieldErrors && (
               <p className="text-sm font-semibold text-error">
-                {t('error', { email: CONTACT_EMAIL })}
+                {state.reason === 'rateLimited'
+                  ? t('rateLimited', { email: CONTACT_EMAIL })
+                  : t('error', { email: CONTACT_EMAIL })}
               </p>
             )}
           </div>
