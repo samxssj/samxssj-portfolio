@@ -23,7 +23,7 @@ Personal developer portfolio built with Next.js — bilingual (ES/EN), interacti
 ## Features
 
 - **Bilingual** ES/EN with locale-based routing (`next-intl`).
-- **Interactive 3D** hero powered by react-three-fiber (procedural keyboard + parallax avatar).
+- **Interactive 3D** stack section powered by react-three-fiber (procedural keyboard).
 - **Contact form** with schema validation (Zod) and transactional email (Resend).
 - **Typed content layer** (`content/`) for projects and stack, covered by unit tests.
 - **Tested**: unit tests for schemas/content plus an e2e smoke test for the golden path.

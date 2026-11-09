@@ -5,8 +5,8 @@ import { useTranslations } from 'next-intl';
 import { submitContact, type ContactState } from '@/lib/actions/contact';
 import { SectionHeading } from '@/components/ui/SectionHeading';
 import { Reveal } from '@/components/ui/Reveal';
+import { CONTACT_EMAIL } from '@/content/profile';
 
-const CONTACT_EMAIL = 'samuelbermudez2812@gmail.com';
 
 const initialState: ContactState = { status: 'idle' };
 

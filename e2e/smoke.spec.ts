@@ -2,7 +2,8 @@ import { test, expect } from '@playwright/test';
 
 test('carga ES con hero y secciones', async ({ page }) => {
   await page.goto('/es');
-  await expect(page.getByText('Hola, soy')).toBeVisible();
+  await expect(page.getByRole('heading', { level: 1, name: /Samuel Bermúdez/ })).toBeVisible();
+  await expect(page.getByText('Disponible · Barcelona / remoto')).toBeVisible();
   await expect(page.locator('#about')).toBeAttached();
   await expect(page.locator('#stack')).toBeAttached();
   await expect(page.locator('#work')).toBeAttached();
@@ -13,7 +14,7 @@ test('switch de idioma a EN', async ({ page }) => {
   await page.goto('/es');
   await page.getByRole('button', { name: 'Switch to English' }).click();
   await expect(page).toHaveURL(/\/en/);
-  await expect(page.getByText("Hi, I'm")).toBeVisible();
+  await expect(page.getByText('Available · Barcelona / remote')).toBeVisible();
 });
 
 test('canvas del teclado monta al hacer scroll', async ({ page }) => {

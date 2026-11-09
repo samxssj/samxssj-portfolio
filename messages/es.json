@@ -1,6 +1,6 @@
 {
   "meta": {
-    "title": "Samuel Bermúdez — Creative Developer",
+    "title": "Samuel Bermúdez — Full-Stack Developer",
     "description": "Portfolio 3D de Samuel Bermúdez (samxssj): desarrollador creativo full-stack. Next.js, React Three Fiber y TypeScript."
   },
   "nav": {
@@ -12,13 +12,23 @@
     "github": "GitHub de Samuel"
   },
   "hero": {
-    "greeting": "Hola, soy",
-    "name": "Samuel",
-    "role1": "Creative",
-    "role2": "Developer",
-    "tagline": "Construyo webs que se sienten vivas.",
-    "cta": "Ver proyectos",
-    "scroll": "desliza"
+    "availability": "Disponible · Barcelona / remoto",
+    "name": "Samuel Bermúdez",
+    "role": "Full-Stack Developer",
+    "stackLabel": "Tecnologías principales",
+    "tagline": "Desarrollo aplicaciones web completas con Next.js, React y TypeScript: interfaces cuidadas, código mantenible y despliegue en producción.",
+    "ctaWork": "Ver proyectos",
+    "ctaContact": "Contactar",
+    "email": "Email",
+    "factsLabel": "Datos clave",
+    "factLocationLabel": "Ubicación",
+    "factLocation": "Barcelona · remoto",
+    "factEducationLabel": "Formación",
+    "factEducation": "Técnico Superior DAM",
+    "factFocusLabel": "Enfoque",
+    "factFocus": "Web apps y SaaS",
+    "factLanguagesLabel": "Idiomas",
+    "factLanguages": "Español · Català · English"
   },
   "about": {
     "title": "Sobre mí",

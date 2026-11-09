@@ -3,8 +3,8 @@
 @theme {
   --font-sans: var(--font-montserrat), system-ui, sans-serif;
 
-  /* flotación idle del avatar del hero (Emil: el movimiento sale del reposo) */
-  --animate-float: float 6s ease-in-out infinite;
+  /* entrada del hero: scale 0.95 + opacity 0 → reposo, ease-out (nunca desde la nada) */
+  --animate-rise: rise 600ms cubic-bezier(0.16, 1, 0.3, 1) both;
 
   /* fondo negro-violeta profundo; acento violeta hue 293 (no 264, se ve azul) */
   --color-bg: oklch(13% 0.02 293);
@@ -40,12 +40,14 @@ body {
   outline-offset: 2px;
 }
 
-@keyframes float {
-  0%,
-  100% {
-    translate: 0 0;
+
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(12px) scale(0.95);
   }
-  50% {
-    translate: 0 -14px;
+  to {
+    opacity: 1;
+    transform: none;
   }
 }
